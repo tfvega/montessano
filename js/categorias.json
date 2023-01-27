@@ -1,0 +1,16 @@
+[
+    {   
+        "cveCategoria":"TERAP",
+        "nombre":"Terapias de Salud"
+    },      
+    {   
+        "cveCategoria":"ALIM",
+        "nombre":"Alimentación"
+    },      
+    {   
+        "cveCategoria":"PROD",
+        "nombre":"Productos"
+    }
+
+
+]

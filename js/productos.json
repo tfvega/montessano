@@ -1,0 +1,83 @@
+[
+    {   
+        "nombre":"ANTIPARASITARIO",
+        "foto":"fo.jpeg",
+        "precio":"1000MXN",
+        "descripcion":"Elimina todo tipo de parásitos que infestan al ser humano.",
+        "cantidad":"0"
+    },    
+    {   
+        "nombre":"SISTEMA INTESTINAL",
+        "foto":"si.jpeg",
+        "precio":"1200MXN",
+        "descripcion":"Limpia al intestino grueso, colon, recto, elimina mal aliento, normaliza evacuación.",
+        "cantidad":"1"
+    },    
+    {   
+        "nombre":"SISTEMA DIGESTIVO",
+        "foto":"sd.jpg",
+        "precio":"50900MXN",
+        "descripcion":"Favorecela buena digestión, elimina gases, inflamación, agruras.",
+        "cantidad":"10"
+    },    
+    {   
+        "nombre":"SISTEMA URINARIO",
+        "foto":"su.jpeg",
+        "precio":"1200MXN",
+        "descripcion":"Problemas de riñones, ácido úrico, vejiga, etc.",
+        "cantidad":"11"
+    },    
+    {   
+        "nombre":"SISTEMA GLANDULAR",
+        "foto":"sg.jpeg",
+        "precio":"1200MXN",
+        "descripcion":"Favorece la actividad glandular.",
+        "cantidad":"14"
+    },
+    {   
+        "nombre":"SISTEMA NERVIOSO",
+        "foto":"sn.jpeg",
+        "precio":"1200MXN",
+        "descripcion":"Relaja, nutre los nervios, elimina migraña, reduce tensión.",
+        "cantidad":"1"
+    },
+    {   
+        "nombre":"SISTEMA CIRCULATORIO",
+        "foto":"sc.jpeg",
+        "precio":"1200MXN",
+        "descripcion":"Mejora la circulación, elimina várices.",
+        "cantidad":"151"
+    },
+    {   
+        "nombre":"SISTEMA RESPIRATORIO",
+        "foto":"sr.jpeg",
+        "precio":"1200MXN",
+        "descripcion":"Fortalece y limpia pulmones, bronquios, etc.",
+        "cantidad":"1"
+    },
+    {   
+        "nombre":"SISTEMA INMUNOLOGICO",
+        "foto":"si.jpeg",
+        "precio":"1200MXN",
+        "descripcion":"Permite al cuerpo tener mejores defensas",
+        "cantidad":"41"
+    },
+    {   
+        "nombre":"FULMINA GRASA",
+        "foto":"fg.jpeg",
+        "precio":"1200MXN",
+        "descripcion":"Elimina la grasa corporal, peso excesivo, mejora la figura",
+        "cantidad":"61"
+    }
+
+
+
+
+
+
+
+
+
+
+
+]

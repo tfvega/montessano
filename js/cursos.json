@@ -1,0 +1,67 @@
+[
+    {   
+        "curso":"LOS 7 HÁBITOS DE LA GENTE NATURALMENTE SANA.",
+        "url_img":"img/cursos/habitos.svg"
+    }, 
+    {   
+        "curso":"LOS 7 HÁBITOS DE LA GENTE NATURALMENTE SUPRAINMUNE.",
+        "url_img":"img/cursos/ejecicio.svg"
+    },      
+    {   
+        "curso":"PLH( LA 1RA LEY DE HEALTHYMOUNTAIN).",
+        "url_img":"img/cursos/ley.svg"
+    },      
+    {   
+        "curso":"CUIDADOS NATURALES EN EL EMBARAZO.",
+        "url_img":"img/cursos/mama.svg"
+    },      
+    {   
+        "curso":"ALIMENTACIÓN INFANTIL.",
+        "url_img":"img/cursos/children.svg"
+    },      
+    {   
+        "curso":"ALCOHOLISMO Y SU SOLUCION NATURAL.",
+        "url_img":"img/cursos/cerveza.svg"
+    },      
+    {   
+        "curso":"LAS ADICCIONES Y SU SOLUCION TOTAL.",
+        "url_img":"img/cursos/alcohol.svg"
+    },      
+    {   
+        "curso":"NATURISMO PARA TODOS (HISTORIA, CIENCIA, ACIERTOS Y DESACIERTOS).",
+        "url_img":"img/cursos/todos.svg"
+    },      
+    {   
+        "curso":"DOCTRINA TERMICA LEZAETANA.",
+        "url_img":"img/cursos/termica.svg"
+    },      
+    {   
+        "curso":"LA COCINA DE EVA.",
+        "url_img":"img/cursos/cookie.svg"
+    },      
+    {   
+        "curso":"WHOLE NUTRICION(NUTRICION TETRADMENSIONAL EN ACCIÓN).",
+        "url_img":"img/cursos/comida.svg"
+    },      
+    {   
+        "curso":"HERBOLARIA ANTOLÓGICA.",
+        "url_img":"img/cursos/planta.svg"
+    },      
+   
+    {   
+        "curso":"CURSO DE ANATOMIA&FISIOLOGIA ELEMENTAL.",
+        "url_img":"img/cursos/body.svg"
+    },      
+   
+    {   
+        "curso":"AXIOLOGIA.(EL ESTUDIO DE LOS VALORES HUMANOS).",
+        "url_img":"img/cursos/pasear_perro.svg"
+    },      
+    {   
+        "curso":"BIOSINERGIA.",
+        "url_img":"img/cursos/estiramiento.svg"
+    }     
+   
+
+
+]

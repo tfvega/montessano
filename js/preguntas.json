@@ -1,0 +1,34 @@
+[
+    {   
+        "cveCategoria":"TERAP",
+        "pregunta":"¿Cuánto se debe esperar para comer después de usar un baño de tronco?",
+        "respuesta":"Te recomiendo esperar de 15 a 20 minutos para poder comer"
+    },    
+    {   
+        "cveCategoria":"TERAP",
+        "pregunta":"¿Qué pasa si tengo las manos o pies fríos al darme un baño de tronco?",
+        "respuesta":"Podrías enfermarte de un resfriado, siempre debes tener las manos y pies calientes."
+    },    
+    {   
+        "cveCategoria":"ALIM",
+        "pregunta":"¿Cuánta fruta se debe comer al día?",
+        "respuesta":"Comer fruta no tiene límite, puedes comer la que gustes, sin embargo el excederse puede ocasionar algunas molestias"
+    },    
+    {   
+        "cveCategoria":"ALIM",
+        "pregunta":"¿Es recomendable comer la fruta después de los alimentos como postre",
+        "respuesta":"La fruta o la verdura deben comerse antes de el platillo, para aprovechar mejor sus nutrientes"
+    },    
+    {   
+        "cveCategoria":"PROD",
+        "pregunta":"¿Cada cuánto tiempo de deben tomar las capsulas para sistema digestivo?",
+        "respuesta":"Regularmente, las capsulas de los productos de salud Montessano se toman dos por la mañana y dos por la noche, antes de los alimentos"
+    },
+    {   
+        "cveCategoria":"PROD",
+        "pregunta":"¿Qué hago si se me pasa un día al tomar las cápsulas?",
+        "respuesta":"Si omitiste una toma o varias, solo debes continuar con el tratamiento en las mismas dosis recomendadas"
+    }
+
+
+]
