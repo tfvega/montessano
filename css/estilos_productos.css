@@ -1,0 +1,180 @@
+.contenedor_titulo_productos{
+    width:70%;
+    margin: 10rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contenedor_productos{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    margin-bottom: 10rem;
+    
+}
+
+
+.titulo_productos{
+    --tamano_fuente_titulos:3rem;
+    color: var(--verde_primario);
+    letter-spacing: -1px;
+    line-height: 44px;
+    border-radius: 2px;
+}
+.disponibles{
+    color:#007a4f;
+}
+.no_disponibles{
+    color:#d63031;
+}
+
+.card_contenedor_cantidad{
+    width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.icon{
+    width: 3rem;
+    height: 3rem;
+    
+    cursor: pointer;
+
+}
+
+.giro_icon{
+    transition:  ease-in-out 0.1s transform;
+}
+
+.giro_icon:hover{
+    transform: rotate(360deg);
+
+}
+.card_body{
+    width: 100%;
+    height: 850px;
+    box-shadow: 0 0px 10px 1px rgba(0, 0, 0, 0.2);
+    --tamano_fuente_botones:1.2rem;
+    --transform_scale_botones:1;
+    --color_botones:rgb(255, 255, 255);
+    --background_color_botones:var(--verde_primario);
+    --background_color_botones_hover:var(--verde_primario);
+    line-height: 1.5;
+/* background-image: url(../img/prod/fems.jpeg); */
+background-position: center;
+background-size: cover;
+
+}
+.card_body *{
+    margin: 0;
+
+}
+.card_img{
+    height: 50%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+    
+}
+.card_info{
+    width: 90%;
+    height: 400px;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-rows: 43px 58px 163px auto;
+    
+
+
+}
+.card_nombre{
+    font-size: 1.8rem;
+
+    font-weight: 400;
+
+}
+.card_precio{
+    font-size: 3rem;
+
+}
+.card_descripcion{
+    letter-spacing: 1px;
+
+}
+
+/* .card_disponibilidad{
+
+} */
+.card_contenedor_cantidad{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card_cantidadMaxima{
+    font-size: inherit;
+}
+.card_contenedor_botones{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.comprar,
+.agregar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width:1100px){
+
+    .contenedor_productos{
+        grid-template-columns: repeat(3,1fr);    
+    }
+    .contenedor_titulo_productos{
+        width:70%;
+        margin: 6rem auto;
+        --tamano_fuente_titulos:2.5rem;
+
+    }
+}
+@media (max-width:850px){
+
+    .contenedor_productos{
+        grid-template-columns: repeat(2,1fr);    
+    }
+    .contenedor_titulo_productos{
+        width:90%;
+    }
+    .titulo_productos{
+        --tamano_fuente_titulos:2.5rem;
+       line-height: 30px;
+    }
+}
+@media (max-width:570px){
+
+    .contenedor_productos{
+        grid-template-columns: 1fr;    
+    }
+    .titulo_productos{
+        --tamano_fuente_titulos:1.9rem;
+        line-height: 25px;
+       
+    }
+}
+@media (max-width:350px){
+
+    .titulo_productos{
+        --tamano_fuente_titulos:1.5rem;
+        line-height: 20px;
+       
+    }
+}

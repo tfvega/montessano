@@ -1,0 +1,37 @@
+
+.centrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.flex_center{
+    align-self:center;
+}
+.opacidadMedia{
+    opacity: 0.5;
+}
+.e1{grid-area: e1;}
+.e2{grid-area: e2;}
+.e3{grid-area: e3;}
+.e4{grid-area: e4;}
+.e5{grid-area: e5;}
+.e6{grid-area: e6;}
+.e7{grid-area: e7;}
+.e8{grid-area: e8;}
+.e9{grid-area: e9;}
+.e10{grid-area: e10;}
+.e11{grid-area: e11;}
+.e12{grid-area: e12;}
+.e13{grid-area: e13;}
+.e14{grid-area: e14;}
+.e15{grid-area: e15;}
+
+#map{
+    height: var(--altura_mapa);
+    width: var(--anchura_mapa);
+}

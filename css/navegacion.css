@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;0,700;1,300;1,400&family=Poppins:wght@100;400;700;900&family=Roboto+Slab:wght@100;700;900&display=swap');
+:root{
+    --verde_primario:#007a4f;
+    --verde_secundario:#00923f;
+    --color_texto:#f8f9fa;
+    --color_botones:#f8f9fa;
+    --background_color_botones:hsla(0, 0%, 100%, 0.2);
+    --color_botones_hover:#000;
+    --background_color_botones_hover:rgb(255, 255, 255);
+    --color_fondo_nav:#1f2326;
+    --color_hover_burger:#112B3C;
+    --color_hover_bg_burger:#205375;
+    --color_hover_img: rgba(235, 235, 235, 0.2);
+    --fuente_textos:'Poppins', sans-serif;
+    --fuente_elegante:'Montserrat', serif;
+    --tamano_fuente_botones:2rem;
+    --transform_scale_botones:1.2;
+    --tamano_fuente_titulos:4rem;
+    --anchura_mapa:50%;
+    --altura_mapa:100vh;
+    --p_max_width:100rem;
+    --h1_max_width:100rem;
+    --smooth_carrusel:transform, ease-in-out, 0s;
+    --bg_carrusel:linear-gradient(90deg, rgba(166,173,66,0.5) 0%, rgba(42,172,42,0.5) 100%);
+    --color_textos:#6c757d ;
+    --clipy:  polygon(0 0, 100% 0, 100% 0, 0 0);
+
+}
+*, *:before, *:after{
+    box-sizing: border-box;
+ 
+    font-size: 62.5%; /*esto hace que 1rem sea igual a 10px*/
+    padding: 0;
+    margin: 0;
+    font-family: var(--fuente_textos);
+
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none;   /* Chrome/Safari/Opera */
+        -khtml-user-select: none;    /* Konqueror */
+        -moz-user-select: none;      /* Firefox */
+        -ms-user-select: none;       /* Internet Explorer/Edge */
+        user-select: none;           /* Non-prefixed version, currently supported by any browser but < IE9 */
+}
+body{
+    position: relative;
+}
+nav{
+    padding: 0.1px;
+    background-color: var(--color_fondo_nav);
+}
+nav a:hover{
+    background-color:var(--verde_secundario) ;
+    box-shadow:  0px 0px 5px 1.5px var(--verde_primario); 
+}
+
+footer{
+   padding: 2rem 20% ;
+    margin: 0 auto ;
+    background-color: var(--color_fondo_nav);
+    color:#fff;
+}
+footer a{
+    font-size:2rem ;
+    display: inline-block;
+    color: #fff;
+}
+footer a:hover{
+ color:#007a4f ;
+
+}
+.contenedor_enlace_footer{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: var(--color_texto);
+    font-size: calc(var(--tamano_fuente_titulos)*0.5);
+}
+a:hover{
+    text-decoration: none;
+}
+p{
+    max-width:var(--p_max_width);
+    margin: 2rem auto;
+    font-size: calc(var(--tamano_fuente_titulos)*0.5);
+    font-weight: 200;
+}
+h1 {
+    max-width:var(--h_max_width);
+    font-size: var(--tamano_fuente_titulos);
+}
+h2{
+    font-size: calc(var(--tamano_fuente_titulos)*0.7);
+    font-weight: 200;
+}
+hr{
+    width: 90%;
+    margin: 0 auto;
+    color:var(--color_texto);
+}
+
+/* estilos universales */
+.img-fondo{
+    width: 100%;
+    height: 100vh;
+  
+    padding:1rem;
+    background-color: rgba(50, 50, 50, 0.5);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+.botones{
+   
+    cursor: pointer;
+    color:var(--color_botones);
+    border-color: var(--color_botones);
+    background-color: var(--background_color_botones);
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+
+    border: 1px solid ;
+    border-radius: calc(var(--tamano_fuente_botones)/2);
+    padding: calc(var(--tamano_fuente_botones)/2) var(--tamano_fuente_botones);
+    font-size:  var(--tamano_fuente_botones);
+
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.botones:hover{
+    background-color:var(--background_color_botones_hover);
+    color: var(--color_botones_hover);
+    border-width: 0;
+    transform: scale(var( --transform_scale_botones));
+}
+
+
+/*clases de  la navegacion*/
+
+.logo, .menu-desplegable{
+    margin: 0 0rem;
+    width:6rem;
+    height:4rem;
+}
+.menu-desplegable{
+    display: none;
+    border-radius:1rem ;
+}
+.logo{
+    margin-left: 1rem;
+    border-radius: 1rem;
+}
+.desplegable{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor-nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+.a-nav{
+    color: var(--color_texto);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+    z-index: 300;
+
+}
+
+.a-nav--activo{
+    color: var(--verde_primario);
+}
+.a-logo{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100%;
+}
+
+.contenedor-salud{
+    width: 90%;
+    text-align: center;
+    flex-grow:12;
+    display: flex;
+    align-items: center;
+}
+.a-nav:hover{
+    color: var(--color_texto);
+
+}
+
+@media(max-width:1250px){
+    .a-nav{
+        font-size: 2rem;
+        padding: 0.7rem 1.5rem;
+        margin: 0 0.5rem;
+        border-radius: 1rem;
+    }
+
+
+}
+@media(max-width:1000px){
+    .a-nav{
+        font-size: 1.7rem;
+        padding: 0.5rem 1rem;
+        margin: 0 0.5rem;
+    }
+
+
+}
+@media(max-width:768px){
+    .a-logo{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        height: 100%;
+    }
+    .contenedor-nav{
+        flex-direction: column;
+    }
+    .contenedor-salud{
+        justify-content: space-between;
+    }
+
+    .menu-desplegable{
+        display: block;
+        
+    }
+    
+    .desplegable{
+        height: 1px;
+        overflow: hidden;
+        flex-direction: column;
+        transition: 0.5s height  ease-in-out;
+        
+    }
+    
+    .menu-desplegable:hover{
+        border: var(--verde_secundario) solid 1px;
+    }
+    #desplegar:checked + .desplegable{
+        height: 14.2rem;
+    }
+ 
+
+}
+
+
+
+@media(max-width:460px) {
+    .a-nav{
+        display: block;
+    }
+
+}
+
+
+

@@ -1,0 +1,99 @@
+
+.contenedor_cursos .curso:nth-child(even){
+    border-right: solid 2px var(--verde_primario);
+   
+}
+.contenedor_cursos .curso:nth-child(odd){
+    flex-direction: row-reverse;
+    border-left: solid 2px var(--verde_primario);
+   
+}
+.contenedor_cursos .curso:nth-child(even) .img_curso{
+    clip-path:  polygon(0 0, 100% 0, 70% 100%, 0 100%);
+    
+    
+}
+.contenedor_cursos .curso:nth-child(odd) .img_curso{
+    clip-path:  polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+   
+}
+.contenedor_cursos .curso:nth-child(odd) .nombre_curso{
+    flex-direction: row-reverse;
+    margin-left: 10%;
+}
+
+.curso{
+    background-color: #00ffae24;
+    padding: auto;
+    margin: 10rem auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    color: var(--verde_primario);
+    box-shadow: 0 0px 10px 1px rgba(0, 0, 0, 0.2);
+   
+}
+.curso:hover{
+    box-shadow: 0 0px 10px 10px rgba(0, 0, 0, 0.2);
+   
+}
+.img_curso{
+    height: 300px;
+    width: 48%;
+    background-color: rgb(232, 232, 232);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.nombre_curso{
+    padding-right:2rem;
+    width: 52%;
+    font-size: 2rem;
+    text-align: left;
+}
+h1{
+    font-size: inherit;
+}
+@media(max-width:666px){
+    .nombre_curso{
+        font-size: 1.5rem;
+    }
+
+}
+@media(max-width:512px){
+    .nombre_curso{
+        font-size: 1.2rem;
+    }
+
+}
+@media(max-width:400px){
+    
+    .contenedor_cursos .curso:nth-child(even),
+    .contenedor_cursos .curso:nth-child(odd){
+        flex-direction: column;
+        border-bottom: solid 2px var(--verde_primario);
+        border-left: none;
+        border-right: none;
+        max-width: 90%;
+        height: 104vw;
+        width: 80vw;
+    }
+    .contenedor_cursos .curso:nth-child(even) .img_curso,
+    .contenedor_cursos .curso:nth-child(odd) .img_curso{
+        clip-path:  polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        max-height:70%;
+        width: 100%;
+    
+    }
+    .nombre_curso{
+        height: 30%;
+        width: 90%;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+    }
+}

@@ -1,0 +1,269 @@
+.img-1{
+    background-image: url(../img/arboles.jpg),  linear-gradient( 90deg,rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2)100%);
+    grid-area: elemento1;
+    color:#fff;
+    height: 100vh;
+}
+.biblia{
+    position: absolute;
+    right: 5%;
+    top:10%;
+    background-position: center;
+    background-size: cover;
+    height:150px;
+    opacity: 0.3;
+}
+.foto_papa{
+    position: absolute;
+    left: 5%;
+    top:10%;
+    background-position: center;
+    background-size: cover;
+    height:150px;
+    opacity: 0.55;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.836);
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    z-index: 10;
+    /* display: none; */
+}
+.icon_escape{
+    height:100px;
+    width: 100px;
+    transform: rotate(45deg);
+    fill: rgba(255, 255, 255, 0.788);
+    stroke:rgba(255, 255, 255, 0.788) ;
+    stroke-width: 0.1;
+    transition: transform 0.2s ease-in-out;
+}
+.icon_escape:hover{
+    
+    transform: rotate(135deg);
+}
+
+
+.ojo_nav{
+    --tamano_parpado:0%;
+    /* transform: translate(-50%,-50%) scale(1); */
+    transform: translate(-50%,-50%) rotate(45deg) scale(0.001);
+    opacity:0;
+
+
+
+
+    overflow: hidden;
+    --bg_fondo_ojo: rgba(0, 0, 0, 0.13);
+    --tamano_fuente_titulos:3rem;
+    --tamano_ojo:80vw;
+    --border_ojo:rgba(255, 255, 255, 0.395) solid 0.1px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    
+    background-color: rgba(255, 255, 255, 0.395);
+    
+    transition: transform 0.8s  ease-in-out;
+    height: var(--tamano_ojo);
+    width: var(--tamano_ojo);
+    max-height: 80vh;
+    max-width: 80vh;
+
+    border-radius:  50% ;
+    background-color:rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.1);
+    border:var(--border_ojo);
+    z-index: 100;
+    opacity: 1;
+    
+}
+.ojo_nav:hover{
+    --tamano_parpado:145%;
+}
+
+
+.parpado{
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+
+    height: var(--tamano_parpado);
+    transform: translate(-50%,-50%) rotate(-45deg);
+    border-top:solid 1px rgba(255, 255, 255, 0.1) ;
+    border-bottom:solid 1px rgba(255, 255, 255, 0.1) ;
+    transition: height 0.6s 0.7s ease;
+    /* background-color: rgba(124, 29, 29, 0.188); */
+    background-color:rgba(255, 255, 255, 0.116);
+   
+}
+.pupila{
+  
+    position: relative;
+    height:calc(var(--tamano_ojo)*0.65);
+    width:calc(var(--tamano_ojo)*0.65);
+    max-height:80vh ;
+    max-width: 80vh;
+    border-radius: 50%;
+    background-color: rgba(180, 180, 180, 0.13);
+    overflow: hidden;
+   
+}
+.iris{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius:50% ;
+    width:65%;
+    height:65%;
+      background-image: url(../img/ojo_nav.jpeg), linear-gradient( 90deg,rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5)100%);
+    background-position:center ;
+    /* background-repeat:no-repeat ; */
+    background-size: 130%;
+    z-index: 200;
+}
+
+
+
+
+
+
+
+.texto-index{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.titulo_index{
+    font-weight: 700;
+}
+.parrafo_index{
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+
+
+svg{
+    
+    stroke: #fff;
+    fill: #fff;
+    height: 30%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    transform: scale(0.6);
+    z-index: 100;
+    
+}
+svg:hover{
+    stroke: var(--verde_primario);
+    fill:var(--verde_primario);
+    /* stroke: #fff;
+    fill: #fff;; */
+  
+}
+.svg_div{
+    width: auto;
+    height: 50%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.014);
+   
+    
+
+}
+.svg_arriba{
+    align-items: flex-start;
+    transform-origin: 50% 100%;
+}
+.svg_telegram{
+    transform: translate(-50%,-100%) rotate(-72deg) ;
+
+}
+.svg_cursos{
+    transform: translate(-50%,-100%) rotate(-38deg) ;
+
+}
+.svg_productos{
+    transform: translate(-50%,-100%) rotate(0deg) ;
+
+}
+
+.svg_servicios{
+    transform: translate(-50%,-100%) rotate(36deg);
+
+}
+
+.svg_genealogia{
+    transform: translate(-50%,-100%)  rotate(72deg);
+
+}
+.svg_nosotros{
+    transform: translate(-50%,-100%)rotate(108deg);
+
+}
+
+
+.svg_abajo{
+    align-items: flex-end;
+    transform-origin: 50% 0%;
+}
+.svg_preguntas{
+    transform: translate(-50%,0%) rotate(72deg);
+
+}
+.svg_testimonios{
+    align-items: flex-end;
+    transform: translate(-50%,0%) rotate(36deg);
+
+}
+.svg_ciencias{
+    transform: translate(-50%,0%) rotate(0deg);
+}
+
+.svg_doctrinas{
+    transform: translate(-50%,0%) rotate(-36deg);
+
+}
+
+
+.separadores{
+    content: " ";
+    position: absolute;
+    right: 50%;
+    top:50%;
+    width: 5px;
+    height: 150%;
+    background-color:var(--bg_fondo_ojo);
+    z-index: 1;
+
+}
+
+.separador_1{transform: translate(-50%,-50%) rotate(18deg);}
+.separador_2{transform: translate(-50%,-50%) rotate(52deg);}
+.separador_3{transform: translate(-50%,-50%) rotate(88deg);}
+.separador_4{transform: translate(-50%,-50%) rotate(124deg);}
+.separador_5{transform: translate(-50%,-50%) rotate(160deg);}
