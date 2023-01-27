@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Montessano productos.</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/navegacion.css">
+    <link rel="stylesheet" href="css/estilos_productos.css">
+    <link rel="stylesheet" href="css/ayuda.css">
+    <link rel="shortcut icon" href="#">
+  </head>
+  <body>
+  <header>
+    <nav>
+        <div class="contenedor-nav">
+          <div class="contenedor-salud">
+            <a class="a-nav a-logo " href="index.html" ><img src="img/logos/logo1.png" class="logo"/></a>
+            <a class="a-nav a-salud" href="salud.html"  > Salud basada en principios.  </a>
+          <label for="desplegar">
+            <svg xmlns="http://www.w3.org/2000/svg" class="menu-desplegable"  viewBox="0 0 24 24" stroke-width="2.5" stroke="#1eb346" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <line x1="4" y1="6" x2="20" y2="6" />
+            <line x1="4" y1="12" x2="20" y2="12" />
+            <line x1="4" y1="18" x2="20" y2="18" />
+          </svg>
+          </label>
+          
+          </div>
+          <input type="checkbox" class="hidden" id="desplegar">
+            <div class="desplegable">
+              <a class="a-nav a-nav--activo" href="productos.html">Productos</a>
+              <a class="a-nav  " href="cursos.html">Cursos</a>
+              <a class="a-nav  " href="servicios.html">Servicios</a>
+              <a class="a-nav  " href="nosotros.html">Nosotros</a>
+           </div>
+            
+  
+        </div>
+      </nav>
+  </header>
+
+<main>
+
+  <section class="contenedor_titulo_productos ">
+
+      <h1 class="titulo_productos">Una selección de los mejores productos naturales para ayudarte en el proceso de recuperar tu salud.</h1>
+
+        <!-- <p class="lead text-muted letra_cursiva "> 	&quot; La mejor forma de lidiar con las enfermedades es evitarlas por completo. 	&quot;</p> -->
+
+  </section>
+
+
+
+      <div class="contenedor_productos " id="insertar_productos">
+       
+
+            <!--             <div class="card_body data-idProducto:"${i}"> 
+            <div class="card_img" style="background-image: url(img/prod/${producto.foto})"></div>
+                <div class="card_info">
+                        <h5 class="card_nombre">${producto.nombre}</h5>
+                        <p class="card_precio">$ ${producto.precio}</p>
+                        <p class="card_descripcion">${producto.descripcion}</p>
+                        <p class="card_disponibilidad ${producto.cantidad>0 ? 'disponibles':'no_disponibles'}">disponible${producto.cantidad>1 ? 's':''}: <spand class="card_cantidadMaxima">${producto.cantidad}</span>
+                        </p>
+
+                      <div class="card_contenedor_cantidad ${producto.cantidad<=0 ? 'opacidadMedia':''}">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon menos ${producto.cantidad>0 ? 'opacidadMedia':''}" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"/>
+                            </svg>
+                            <p class="card_cantidad">0</p>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon mas giro_icon" viewBox="0 0 16 16">
+                              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                            </svg>
+                      </div>
+                      <div class="card_contenedor_botones">
+                            <div class="comprar">
+                              <button type="button" class="botones">comprar</button>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                                <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+                              </svg>
+                            </div>
+                            
+                            <div class="agregar">
+                              <button type="button" class="botones">agregar</button>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                              </svg>
+                              
+                            </div>
+                      </div>
+
+                </div>
+            </div>  -->
+
+
+      </div>
+
+
+</main>
+
+
+     <footer > 
+    <p>&copy; 2023 Montessano </p>
+    <div class="contenedor_enlace_footer">
+      <a href="preguntas.html">Preguntas</a>
+      <a href="iridologia.html">Iridología</a>
+      <a href="salud.html">Salud</a>
+      <a href="genealogia.html">Genealogía</a>
+      <a href="cursos.html?seminarios=1.html">Seminarios</a>
+      <a href="nosotros.html">Nosotros</a>
+    </div>
+</footer>
+
+
+    <script src="js/productos.js"></script>
+
+      
+  </body>
+</html>
